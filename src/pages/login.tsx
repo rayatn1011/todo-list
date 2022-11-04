@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from '@/assets/react.svg'
 
-export default function Login() {
+export function Login() {
     const [count, setCount] = useState(0)
 
     return (
