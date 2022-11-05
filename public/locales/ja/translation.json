@@ -24,6 +24,6 @@
         "all": "すべて",
         "todo": "やるべきこと",
         "done": "完了",
-        "todos": "{{count}} todos"
+        "count_todos": "{{count}} todos"
     }
 }

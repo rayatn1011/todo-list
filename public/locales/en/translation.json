@@ -24,6 +24,6 @@
         "all": "all",
         "todo": "To-Do",
         "done": "Completed",
-        "todos": "{{count}} items"
+        "count_todos": "{{count}} items"
     }
 }
