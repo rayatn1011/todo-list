@@ -1,29 +1,29 @@
 {
     "common": {
-        "error": "錯誤",
-        "loading": "載入中",
+        "error": "错误",
+        "loading": "载入中",
         "login": "登入",
         "logout": "登出"
     },
     "login": {
-        "register": "註冊帳號",
+        "register": "注册帐号",
         "email": "信箱",
-        "nickname": "暱稱",
-        "password": "密碼",
-        "re_enter_password": "再次輸入密碼",
-        "require_field": "此欄位不得為空",
-        "input_email": "請輸入信箱",
-        "input_nickname": "請輸入暱稱",
-        "input_password": "請輸入密碼",
-        "input_password_again": "請再次輸入密碼"
+        "nickname": "昵称",
+        "password": "密码",
+        "re_enter_password": "再次输入密码",
+        "require_field": "此栏位不得为空",
+        "input_email": "请输入信箱",
+        "input_nickname": "请输入昵称",
+        "input_password": "请输入密码",
+        "input_password_again": "请再次输入密码"
     },
     "home": {
-        "new_todo_item": "新增待辦項目",
-        "clear_done_item": "清除已完成的項目",
-        "no_item": "目前尚無待辦項目",
+        "new_todo_item": "新增待办项目",
+        "clear_done_item": "清除已完成的项目",
+        "no_item": "目前尚无待办项目",
         "all": "全部",
         "todo": "待完成",
         "done": "已完成",
-        "todos": "{{count}}個代辦項目"
+        "todos": "{{count}}个代办项目"
     }
 }

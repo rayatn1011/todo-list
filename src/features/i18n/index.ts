@@ -15,7 +15,7 @@ export default i18n
         interpolation: {
             escapeValue: false,
         },
-        load: 'currentOnly',
+        load: 'all',
         fallbackLng: 'en',
-        supportedLngs: ['en', 'zh', 'ja'],
+        supportedLngs: ['en', 'zh-TW', 'zh', 'ja'],
     })
