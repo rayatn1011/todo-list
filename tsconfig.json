@@ -21,6 +21,6 @@
             "@/*": ["src/*"]
         }
     },
-    "include": [".eslintrc.cjs", "vite.config.ts", "src"],
+    "include": ["src"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
