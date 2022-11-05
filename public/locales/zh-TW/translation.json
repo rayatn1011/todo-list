@@ -24,6 +24,6 @@
         "all": "全部",
         "todo": "待完成",
         "done": "已完成",
-        "todos": "{{count}}個代辦項目"
+        "count_todos": "{{count}}個代辦項目"
     }
 }
