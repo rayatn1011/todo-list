@@ -1,0 +1,29 @@
+{
+    "common": {
+        "error": "Error",
+        "loading": "Loading",
+        "login": "Login",
+        "logout": "Logout"
+    },
+    "login": {
+        "register": "Register Account",
+        "email": "mailbox",
+        "nickname": "nickname",
+        "password": "password",
+        "re_enter_password": "re-enter_password",
+        "require_field": "This field must not be empty",
+        "input_email": "Please enter your email address",
+        "input_nickname": "Please enter a nickname",
+        "input_password": "Please enter your password",
+        "input_password_again": "Please enter password again"
+    },
+    "home": {
+        "new_todo_item": "Add new todo item",
+        "clear_done_item": "Clear completed items",
+        "no_item": "There are no pending items yet",
+        "all": "all",
+        "todo": "To-Do",
+        "done": "Completed",
+        "count_todos": "{{count}} items"
+    }
+}

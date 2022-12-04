@@ -1,0 +1,29 @@
+{
+    "common": {
+        "error": "エラー",
+        "loading": "読み込み中",
+        "login": "ログイン",
+        "logout": "ログアウト"
+    },
+    "login": {
+        "register": "アカウント登録",
+        "email": "メールボックス",
+        "nickname": "ニックネーム",
+        "password": "パスワード",
+        "re_enter_password": "パスワードをもう一度入力してください",
+        "require_field": "このフィールドは空であってはなりません",
+        "input_email": "メールアドレスを入力してください",
+        "input_nickname": "ニックネームを入力してください",
+        "input_password": "パスワードを入力してください",
+        "input_password_again": "パスワードをもう一度入力してください"
+    },
+    "home": {
+        "new_todo_item": "Todo アイテムを追加",
+        "clear_done_item": "完了アイテムをクリア",
+        "no_item": "現在、やるべきことはありません",
+        "all": "すべて",
+        "todo": "やるべきこと",
+        "done": "完了",
+        "count_todos": "{{count}} todos"
+    }
+}
