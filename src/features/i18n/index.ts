@@ -10,13 +10,32 @@ export default i18n
     .use(initReactI18next)
     .init({
         detection: {
-            order: ['querystring', 'navigator', 'htmlTag'],
+            order: ['querystring', 'navigator'],
+            caches: [], // no need caches
         },
         debug: isDev,
         interpolation: {
             escapeValue: false,
         },
-        load: 'all',
         fallbackLng: 'en',
         supportedLngs: ['en', 'zh-TW', 'zh', 'ja'],
     })
+
+/**
+ * mapping locale to html lang
+ */
+const htmlLang: { [key: string]: string } = {
+    en: 'en',
+    'zh-TW': 'zh-Hant',
+    zh: 'zh-Hans',
+    ja: 'ja',
+};
+
+/**
+ * handle automatic chang html lang
+ */
+i18n.on('languageChanged', (lng) => {
+    if (htmlLang[lng]) {
+        document.documentElement.lang = htmlLang[lng];
+    }
+});
