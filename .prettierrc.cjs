@@ -1,7 +1,15 @@
 module.exports = {
   trailingComma: 'es5',
   tabWidth: 4,
-  semi: false,
+  semi: true,
   singleQuote: true,
-  printWidth: 120,
+  printWidth: 100,
+  overrides: [
+    {
+      files: ['*.html'],
+      options: {
+        tabWidth: 2,
+      },
+    },
+  ],
 }
