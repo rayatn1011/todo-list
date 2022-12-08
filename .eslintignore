@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
-# Node and webpack
+# node
 node_modules
 dist
+
+# editor
+.vscode
