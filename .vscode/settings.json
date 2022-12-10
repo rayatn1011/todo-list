@@ -18,4 +18,8 @@
     "source.fixAll.eslint": true
   },
   "files.eol": "\n",
+  "i18n-ally.localesPaths": [
+    "public/locales",
+    "src/features/i18n"
+  ],
 }
