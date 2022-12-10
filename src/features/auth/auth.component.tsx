@@ -1,18 +1,7 @@
-import { createContext, useCallback, useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
+import { AuthContext } from '@/features/auth/auth.context';
 import { useFetchGetCheck } from '@/features/fetch';
 import { useLocalStorage } from '@/features/storage';
-
-interface IAuth {
-    authToken: null | string;
-    setAuthToken: (token: string) => void;
-    removeAuthToken: () => void;
-}
-
-export const AuthContext = createContext<IAuth>({
-    authToken: null,
-    setAuthToken: () => undefined,
-    removeAuthToken: () => undefined,
-});
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
     const [authToken, setAuthToken] = useLocalStorage('authToken');
@@ -21,8 +10,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }, [setAuthToken]);
 
     const { isError } = useFetchGetCheck();
+
+    // If check is Error, remove authorization token
     useEffect(() => {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         if (isError?.status === 401) {
             removeAuthToken();
         }
