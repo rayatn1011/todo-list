@@ -1,17 +1,17 @@
 import { lazy, Suspense } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import ProtectedRoute from '@/features/router/protectedRoute';
+import ProtectedRoute from './protected-route';
 
 /**
  * Page Component
  */
-import NotFound from '@/pages/notFound';
+import NotFound from '@/pages/not-found';
 /**
  * lazy Page Component
  */
 const HomePage = lazy(() => import('@/pages/home'));
-const SignInPage = lazy(() => import('@/pages/signIn'));
-const SignUpPage = lazy(() => import('@/pages/signUp'));
+const SignInPage = lazy(() => import('@/pages/sign-in'));
+const SignUpPage = lazy(() => import('@/pages/sign-up'));
 
 export const router = createBrowserRouter([
     {
@@ -30,7 +30,7 @@ export const router = createBrowserRouter([
         element: (
             <ProtectedRoute isRequireNoAuth={true}>
                 <Suspense>
-                    <SignInPage />
+                    <SignUpPage />
                 </Suspense>
             </ProtectedRoute>
         ),
@@ -40,7 +40,7 @@ export const router = createBrowserRouter([
         element: (
             <ProtectedRoute isRequireNoAuth={true}>
                 <Suspense>
-                    <SignUpPage />
+                    <SignInPage />
                 </Suspense>
             </ProtectedRoute>
         ),

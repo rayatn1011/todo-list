@@ -1,1 +1,1 @@
-export { useLocalStorage } from '@/features/storage/localStorage.hook';
+export { useLocalStorage } from './local-storage.hook';

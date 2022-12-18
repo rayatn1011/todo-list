@@ -1,7 +1,7 @@
 import useSWR from 'swr';
 import { useAuth } from '@/features/auth';
-import { fetcher } from '@/features/fetch/fetcher';
-import type { IErrorMessage } from '@/features/fetch/fetcher';
+import { fetcher } from '@/features/fetch';
+import type { IErrorMessage } from '@/features/fetch';
 
 export function useFetchGetCheck() {
     const { authToken } = useAuth();
@@ -14,6 +14,7 @@ export function useFetchGetCheck() {
                 headers: {
                     authorization: authToken,
                 },
+                method: 'GET',
             },
         },
         fetcher,
