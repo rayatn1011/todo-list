@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from 'react';
-import { AuthContext } from '@/features/auth/auth.context';
-import { useFetchGetCheck } from '@/features/fetch';
+import { useFetchGetCheck } from '@/features/apis';
 import { useLocalStorage } from '@/features/storage';
+import { AuthContext } from './auth.context';
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
     const [authToken, setAuthToken] = useLocalStorage('authToken');

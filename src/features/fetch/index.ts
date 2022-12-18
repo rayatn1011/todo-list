@@ -1,11 +1,3 @@
-/**
- * encapsulate swr
- */
-export { FetchProvider } from '@/features/fetch/fetchProvider';
-
-/**
- * apis
- */
-
-// check/
-export { useFetchGetCheck } from '@/features/fetch/apis/check';
+export { FetchProvider } from './fetch.component';
+export { fetcher } from './fetcher';
+export type { IErrorMessage } from './fetcher';

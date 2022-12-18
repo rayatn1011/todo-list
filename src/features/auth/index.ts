@@ -1,2 +1,2 @@
-export { AuthProvider } from '@/features/auth/auth.component';
-export { useAuth } from '@/features/auth/auth.hook';
+export { AuthProvider } from './auth.component';
+export { useAuth } from './auth.hook';

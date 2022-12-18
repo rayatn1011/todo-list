@@ -6,6 +6,7 @@ interface IProtectedRoute {
     isRequireNoAuth?: boolean;
     children: React.ReactNode;
 }
+
 export default function ProtectedRoute({
     children,
     isRequireAuth = false,

@@ -1,5 +1,5 @@
 import { SWRConfig } from 'swr';
-import { fetcher } from '@/features/fetch/fetcher';
+import { fetcher } from './fetcher';
 
 interface IFetchProvider {
     children?: React.ReactNode;
