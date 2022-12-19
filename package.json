@@ -13,7 +13,8 @@
         "build": "tsc && vite build",
         "preview": "vite preview",
         "lint": "eslint .",
-        "lint:fix": "eslint --fix ."
+        "lint:fix": "eslint --fix .",
+        "npm-check-updates": "npx npm-check-updates"
     },
     "dependencies": {
         "i18next": "^22.1.5",
