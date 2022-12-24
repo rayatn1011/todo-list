@@ -4,11 +4,11 @@ import { FetchProvider } from '@/features/fetch';
 import { AuthProvider } from '@/features/auth';
 
 export default function App() {
-    return (
-        <FetchProvider>
-            <AuthProvider>
-                <RouterProvider router={router} />
-            </AuthProvider>
-        </FetchProvider>
-    );
+  return (
+    <FetchProvider>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </FetchProvider>
+  );
 }
