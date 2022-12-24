@@ -7,6 +7,7 @@ module.exports = {
         primary: {
           300: '#FFC1AB',
           400: '#FFA889',
+          450: '#FF966F',
           500: '#FF8356',
           600: '#FF663C',
           700: '#FF532B',
